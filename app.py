@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import pickle as pk
 import streamlit as st
+import os
 
 
 # -------------------- PAGE CONFIG --------------------
@@ -12,7 +13,8 @@ st.set_page_config(
 
 
 # -------------------- LOAD MODEL --------------------
-model = pk.load(open('model.pkl', 'rb'))
+model_path = os.path.join(os.getcwd(), "model.pkl")
+model = pk.load(open(model_path, "rb"))
 cars_data = pd.read_csv('Cardetails.csv')
 
 
@@ -218,4 +220,5 @@ st.markdown("""
 <div class='footer'>
 Developed by Ashutosh Kumar Gautam | Machine Learning Portfolio Project | 2026
 </div>
+
 """, unsafe_allow_html=True)
