@@ -13,8 +13,7 @@ st.set_page_config(
 
 
 # -------------------- LOAD MODEL --------------------
-model_path = os.path.join(os.getcwd(), "model.pkl")
-model = pk.load(open(model_path, "rb"))
+model = pk.load(open("model.pkl", "rb"))
 cars_data = pd.read_csv('Cardetails.csv')
 
 
@@ -222,5 +221,6 @@ Developed by Ashutosh Kumar Gautam | Machine Learning Portfolio Project | 2026
 </div>
 
 """, unsafe_allow_html=True)
+
 
 
