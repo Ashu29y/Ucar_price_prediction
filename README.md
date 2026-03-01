@@ -70,3 +70,10 @@ The objective of this project is to:
 ---
 
 ## 📂 Project Structure
+├── app.py # Streamlit web application
+├── model.pkl # Trained ML model
+├── Cardetails.csv # Dataset
+├── requirements.txt # Dependencies
+├── render.yaml # Deployment configuration
+├── README.md # Project documentation
+
